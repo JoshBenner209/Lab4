@@ -12,7 +12,7 @@ public class JBGuessGame {
    public static void main(String[] args) {
        final int maxRange =5;
        int randNumber,guess=0,gamesPlayed=0;
-       double guessesMade=0,bestGame=100, guessPerGame;
+       double guessesMade=0,bestGame=100;
        String answer;
        char play;
        Random rand= new Random();
