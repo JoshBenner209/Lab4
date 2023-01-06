@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class JBGuessGame {
     public static void main(String[] args) {
 	final int maxRange =5;
-	int randNumber,guess=0,gamesPlayed=0,count=0;
+	int randNumber,guess=0,gamesPlayed=0;
 	double guessesMade=0,bestGame=100,guesses=0,guessTotal=0;
 	String answer;
 	char play;
@@ -28,7 +28,6 @@ public class JBGuessGame {
 	    answer = scan.next();
 	    play=answer.charAt(0);
 	    if(play=='y'||play=='Y') {
-		count++;
 		guesses=playGame(guessesMade,randNumber,guess, scan,maxRange);
 		myGuess.add(guesses);	    
 	    }
